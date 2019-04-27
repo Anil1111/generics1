@@ -1,15 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ConsoleApp11
+class Learn
 {
-    class Program
+    public static int Main()
     {
-        static void Main(string[] args)
-        {
-        }
+        var com = new List<char>();
+        com.Add('c');
+        com.Add('o');
+        com.Add('m');
+        com.Add('p');
+        com.Add('u');
+        com.Add('t');
+        com.Add('e');
+        com.Add('r');
+
+        for (int i = 0; i < com.Count; i++)
+            Console.Write("{0}", com[i]);
+        Console.WriteLine();
+
+        com.Remove('r');
+
+
+        for (int i = 0; i < com.Count; i++)
+            Console.Write("{0}", com[i]);
+        Console.WriteLine();
+
+        return 0;
     }
 }
